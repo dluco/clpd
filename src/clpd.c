@@ -24,8 +24,6 @@
 #include <stdlib.h>
 #include <gtk/gtk.h>
 
-#define VERSION "0.0.0"
-
 #define DAEMON_INTERVAL 500
 
 struct _options {
@@ -150,7 +148,7 @@ static Options *parse_options(int argc, char *argv[])
 	g_option_context_free(context);
 
 	if (opts->version) {
-		fprintf(stderr, "clipd %s\n", VERSION);
+		fprintf(stderr, "clpd %s\n", VERSION);
 		exit(EXIT_SUCCESS);
 	}
 
